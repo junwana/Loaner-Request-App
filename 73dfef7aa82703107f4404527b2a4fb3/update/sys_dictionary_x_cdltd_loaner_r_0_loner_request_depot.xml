@@ -48,7 +48,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-01 14:37:40</sys_created_on>
-        <sys_id>e2a141a7ad6303107f44c402a46a24a6</sys_id>
         <sys_name>Depot</sys_name>
         <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
         <sys_policy/>
