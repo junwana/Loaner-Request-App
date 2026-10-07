@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=9482000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Basic flow for assigning work on a loaner laptop</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>loaner_laptop</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Loaner Request  Record","reference":"x_cdltd_loaner_r_0_loner_request","reference_display":"Loaner Request ","type":"reference","base_type":"reference","usedInstances":{"c667ebbf-1176-4b77-9da2-5d5471ee614b":["record"],"d84d5b2e-f554-42b0-80e5-4a6368883392":["record"],"99a46ce0-7a2a-4396-9aa4-4d89c584ccc3":["parent"],"9a06986e-dda6-449c-a248-560561611a90":["parent"],"dccbeb9f-69c4-4f67-a5c8-88cff48cb8c3":["record"],"cf5029be-dce3-4acb-be11-1cc2931afd7f":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>45218459a9b703107f44e9480f0d2a0b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Loaner Laptop</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>11218459a9b703107f44e9480f0d2a6b</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e1fc9b01a9f303107f44e9480f0d2afb</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Loaner Laptop</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name>sys_hub_flow_e1fc9b01a9f303107f44e9480f0d2afb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:26:02</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>3e510c59a9b703107f44e9480f0d2aa8</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_cdltd_loaner_r_0_loner_request">item_type=cmdb_ci_computer^state=14<item display_value="Laptop" endquery="false" field="item_type" goto="false" newquery="false" operator="=" or="false" value="cmdb_ci_computer"/>
+            <item display_value="Reserved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="14"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11218459a9b703107f44e9480f0d2a6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:09</sys_updated_on>
+        <table>x_cdltd_loaner_r_0_loner_request</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"run_on_extended":"false","run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any"}</data>
+        <identifier>e1fc9b01a9f303107f44e9480f0d2afb</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:09</sys_created_on>
+        <sys_id>19218459a9b703107f44e9480f0d2a6c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 12:38:54</sys_updated_on>
+        <trigger display_value="">11218459a9b703107f44e9480f0d2a6b</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e1fc9b01a9f303107f44e9480f0d2afb^sys_idNOT IN19218459a9b703107f44e9480f0d2a6c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e1fc9b01a9f303107f44e9480f0d2afb^sys_idNOT INf5fc9b01a9f303107f44e9480f0d2afe"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e1fc9b01a9f303107f44e9480f0d2afb</id>
+        <name>Loaner Laptop</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:04</sys_created_on>
+        <sys_id>f5fc9b01a9f303107f44e9480f0d2afe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 17:47:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f5fc9b01a9f303107f44e9480f0d2afe"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e1fc9b01a9f303107f44e9480f0d2afb^sys_idNOT IN012d1741a9f303107f44e9480f0d2a5b,052d1741a9f303107f44e9480f0d2a50,f82dd341a9f303107f44e9480f0d2a96"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</model>
+        <model_id>e1fc9b01a9f303107f44e9480f0d2afb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e1fc9b01a9f303107f44e9480f0d2afb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:51</sys_created_on>
+        <sys_id>012d1741a9f303107f44e9480f0d2a5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 17:47:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=012d1741a9f303107f44e9480f0d2a5b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</model>
+        <model_id>e1fc9b01a9f303107f44e9480f0d2afb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e1fc9b01a9f303107f44e9480f0d2afb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:51</sys_created_on>
+        <sys_id>052d1741a9f303107f44e9480f0d2a50</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=052d1741a9f303107f44e9480f0d2a50"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</model>
+        <model_id>e1fc9b01a9f303107f44e9480f0d2afb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e1fc9b01a9f303107f44e9480f0d2afb</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:49</sys_created_on>
+        <sys_id>f82dd341a9f303107f44e9480f0d2a96</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f82dd341a9f303107f44e9480f0d2a96"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e1fc9b01a9f303107f44e9480f0d2afb^sys_idNOT IN202dd341a9f303107f44e9480f0d2a8e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:49</sys_created_on>
+        <sys_id>202dd341a9f303107f44e9480f0d2a8e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e1fc9b01a9f303107f44e9480f0d2afb^sys_idNOT INf3cd5301a9f303107f44e9480f0d2ac8,728e97c1a9f303107f44e9480f0d2aed,22ffdfcda9b303107f44e9480f0d2a6c,6f61a309a9f303107f44e9480f0d2abf,c1976b41a93703107f44e9480f0d2a1c,a6f76381a93703107f44e9480f0d2aea"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:50:46</sys_created_on>
+        <sys_id>f3cd5301a9f303107f44e9480f0d2ac8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <ui_id>c667ebbf-1176-4b77-9da2-5d5471ee614b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Xy27bOBSGX8XQ2vSQEiVT2RW2gwnQaQDH7Sw6hUDxEhOgJVWXNJ4g7z6UTMWS7bhGaqODojvxkDz8z+UTpc9PjuLOlYNDJgjFiIyRCyGCQeAxiuLYC1gMY4GdoZPQlTArc8HSnJvxA9VVbXh6muSCloIP0nzwMeP1Y4RGrMpzkZTPz2YpV0Wm6fqT3WEsbKk0N/PO1ecvQyejuXFeity5etqZKteZiDSNhTYbpymrVsbp4GZqfJwqvN09b5XvRlKfYcbceo9UbTRTtR40dMRjKRIuzGmS6kIMnRVNTJRpvnauyrwyBhM/v030+mXFUiXlJtAVfSzUv8a959brpDCRMZuEl2FkE9TmJlVM3GalSpONpaSxbhOX6mqVfNhEUKdWSFrpspPaqjD+RFZLrkVsFMq7Zfpt3p53rZImOKtWp4zqlxEty1zFVSmKuhqVWpjsvD9YAKFFk68VzTKV3EdZnj6oxrGRuRrdazMYSZ1+M3oKdZ+MKKtjGpnk0dG1sU8b8yeaqzrAv4wbs3loz9yriFTatEjUJCMq0ipv8jifTW7n0+jvd4vJn7N5NJ/dLeY3k8Vs2jj6mKivlbhpOkVK5KEgAAhBD2AUByAkwgdQ+BT7Lg78wHWem6pEX6s6IZv82kxGTTE2hzcNZJYWLFdZ+c5E9SBs/p6HLVH+0cak2z7s+NxS9Rgxrkse6ZQmJug8guaxeRImoKLcp+p9s3Iw38wP3gzZopYz+LCRc2oovc2vhGYx69ksZe5xyqzlFMwI/DmYWUVn4qxXg4tj1quIKqJNW9tkNGp3WXIRCQmOPeDF2Ac4lBIQSDDAgkLmu3yMEfsuS98l6PirXW7bjKUJV3XMRYegojQ30T8VhB5H/j4uu9Nvg2XSPflU1Qc3HwrFEtOzWWK8c91LGMKfhMxZb6ZeLi9OTK8iPTIEJ0HsQwKEJARgb0xAiFwXBAHlCGHGJTznLQP5sW6Tne+2Uq1EWpWR1PS+QwncJ6Ml/o3Xh6nqH9fWxaka282zpHnxWa2virdcxGmqBU22UOCzXSP417hGurW4OBTbcvSIYIwScylQEHpMABzEDBDJJPBE7EvPj0k8hj98V7DjPRbutxKvctrUbMvCOf9Utt5P1Xdg6+uSLQFN0bp2C4L/G4T+f8s2Q5fCYGn2Tem6qOtlsOuCsVelHT4EomM/rv9GKMBuiAANsQvCQIwFliTwaPjDfBB0tP/kfrMVbCl4pcVl+HgpaQvICQLbvXdbZa9rtoDknXMsG8EZ/zV2P53YKumKOERKR/3/mZhugS5+c3Sr1GfDdZHHBQOIm08q7AYuIB4eg3FIYohNX8SeeDMbX/4DB+/BlP0SAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f3cd5301a9f303107f44e9480f0d2ac8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:53:59</sys_created_on>
+        <sys_id>728e97c1a9f303107f44e9480f0d2aed</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <ui_id>d84d5b2e-f554-42b0-80e5-4a6368883392</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Xy27bOBSGX8XQ2vSQEiVT2RW2gwnQaQDH7Sw6hUDxEhOgJVWXNJ4g7z6UTMWS7bhGaqODojvxkDz8z+UTpc9PjuLOlYNDJgjFiIyRCyGCQeAxiuLYC1gMY4GdoZPQlTArc8HSnJvxA9VVbXh6muSCloIP0nzwMeP1Y4RGrMpzkZTPz2YpV0Wm6fqT3WEsbKk0N/PO1ecvQyejuXFeity5etqZKteZiDSNhTYbpymrVsbp4GZqfJwqvN09b5XvRlKfYcbceo9UbTRTtR40dMRjKRIuzGmS6kIMnRVNTJRpvnauyrwyBhM/v030+mXFUiXlJtAVfSzUv8a959brpDCRMZuEl2FkE9TmJlVM3GalSpONpaSxbhOX6mqVfNhEUKdWSFrpspPaqjD+RFZLrkVsFMq7Zfpt3p53rZImOKtWp4zqlxEty1zFVSmKuhqVWpjsvD9YAKFFk68VzTKV3EdZnj6oxrGRuRrdazMYSZ1+M3oKdZ+MKKtjGpnk0dG1sU8b8yeaqzrAv4wbs3loz9yriFTatEjUJCMq0ipv8jifTW7n0+jvd4vJn7N5NJ/dLeY3k8Vs2jj6mKivlbhpOkVK5KEgAAhBD2AUByAkwgdQ+BT7Lg78wHWem6pEX6s6IZv82kxGTTE2hzcNZJYWLFdZ+c5E9SBs/p6HLVH+0cak2z7s+NxS9Rgxrkse6ZQmJug8guaxeRImoKLcp+p9s3Iw38wP3gzZopYz+LCRc2oovc2vhGYx69ksZe5xyqzlFMwI/DmYWUVn4qxXg4tj1quIKqJNW9tkNGp3WXIRCQmOPeDF2Ac4lBIQSDDAgkLmu3yMEfsuS98l6PirXW7bjKUJV3XMRYegojQ30T8VhB5HZB+X3em3wTLpnnyq6oObD4ViienZLDHeue4lDOFPQuasN1MvlxcnpleRHhmCkyD2IQFCEgKwNyYgRK4LgoByhDDjEp7zloH8WLfJzndbqVYircpIanrfoQTuk9ES/8brw1T1j2vr4lSN7eZZ0rz4rNZXxVsu4jTVgiZbKPDZrhH8a1wj3VpcHIptOXpEMEaJuRQoCD0mAA5iBohkEngi9qXnxyQewx++K9jxHgv3W4lXOW1qtmXhnH8qW++n6juw9XXJloCmaF27BcH/DUL/v2WboUthsDT7pnRd1PUy2HXB2KvSDh8C0bEf138jFGA3RICG2AVhIMYCSxJ4NPxhPgg62n9yv9kKthS80uIyfLyUtAXkBIHt3rutstc1W0DyzjmWjeCM/xq7n05slXRFHCKlo/7/TEy3QBe/ObpV6rPhusjjggHEzScVdgMXEA+PwTgkMcSmL2JPvJmNL/8B1zlh4P0SAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=728e97c1a9f303107f44e9480f0d2aed"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>Deployment Prep</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 18:00:14</sys_created_on>
+        <sys_id>22ffdfcda9b303107f44e9480f0d2a6c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <ui_id>99a46ce0-7a2a-4396-9aa4-4d89c584ccc3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VVyW7bMBD9FUFnQZWi2k58K1r41CZFl/SQJgQljmyiFMlSlJca/vcMRcl2GsQ1jAJuAR3EmeGbN8uT7tYhZ+E4hFFGh1k2GGRpkmT45GXKrtLkCorB5WhQhFEoaQUYaWn9g1iaC0DbnIrGGZekYMIyIhSVYIghSf/qwjGQ8VoLurrt4t+3zqBzFjMumAEZju/uo1BTg5ksmHC8/s1lVxqIoDkIxPjiOATXjlV0dBFPLr9QlMvS2vBIpMdXhjlCSRTC0oJkgPlKKmqIwopKRq0yq3BsTYMGA5TdSLHaRsy4tAgYuthlzX8h+mXi4krA0grwvu2RdM3y5mKmeAE32nIlvcXz9E4lmkpe+yJcm6GkjbB9m9HS1IgH2lF2JDpG5eeZWnzqE064bKvrnEIVVGxP1FrD88ZC7eaRU8TrCXTjAwEVgpOKas3llGij5rwFRH5VPBV4iEuhFkik5lMZ08IVE2PXaDxB+7vWfEsNd8AfEAYvb9qOkJ+N4+Jr66ogvhEYUBeGa/sG4ebQEd5E3UZfHFyGYb4bfslBMNKucr2307iHmOx7g1fZev0Wp2qBBcoEXzVzrySNi8a4mM3mQRuuDLcrH5491DNlrKu3ZYjVesdHAw42sDMIBNVW6aBERCxNqJVr4nOpnIvGiaKECslbCDz96OhZ9AATNwx/u35xRL1Cu2TesVNpelilneUYmQ4HSXImpfpvyclCPY8o976jf5BnWR5aidFoN/sF5XZPlulzibhWnb6xePnVxHHrt/UIav3lb57bU6bdduZKCaByt5YXf20tX/+nf49/609x/wg4gFH0/QgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=22ffdfcda9b303107f44e9480f0d2a6c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>Post deployment</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 18:06:35</sys_created_on>
+        <sys_id>6f61a309a9f303107f44e9480f0d2abf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <ui_id>9a06986e-dda6-449c-a248-560561611a90</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VVyW7bMBD9FUFnQZWi2k58K1r41CZBl/SQJgQljmyiFKmSlJca/vcORcl2GsQ1jAJuAR3EmeGbN8uT7tchZ+E4hFFGh1k2GGRpkmT45GXKrtLkCorB5WhQhFEoaQUYaan5TizNBaBtTkXjjEtSMGEZEYpK0ESTpH914RjIuKkFXd118e9bZ9A5ixkXTIMMx/cPUVhTjZks6HC8/s1lVzUQQXMQiPHZcQiuHavo6CKeXH6hKJelteGRSI+vNHOEkiiEpQXJAPOVVBiIwopKRq3Sq3BsdYMGDZTdSLHaRsy4tAgYutil4T8R/TJxcSVgaQV43/ZIumZ5czFTvICb2nIlvcXz9E4lmkpe+yJcm6GkjbB9m9HSGMSD2lF2JDpG5aeZWnzsE064bKvrnEIVVGxP1FrN88aCcfPIKeL1BLrxgYAKwUlF65rLKam1mvMWEPlV8VTgIS6FWiARw6cypoUrJsau0XiC9net+Y5q7oA/IAxe3rQdIT8ax8XX1lVBfCMwwBSa1/YNws2hI7yJuo2+OLgMw3w3/JKDYKRdZbO307iHmOxbg1fZev0Wp2qBBUoHX2rmXkkaF412MZvNY6250tyufHj2aGZKW1dvyxCr9Y5b0KXSVWBnENwqYwMsSqiVa18rBvNcKueicaIooULyFgJPPzp6Fj3AxA3D3zYvjqhXaJfMO3YqTQ+rtLMcI9PhIEnOpFT/LTlZqOcR5d539A/yLMtDKzEa7Wa/oNzuyTJ9LhHXqtM3Fi+/mjhu/bYeQa2//NVze8q0285cKQFU7tby4q+t5ev/9O/xb/0pHn4Bn/aUK/0IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6f61a309a9f303107f44e9480f0d2abf"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Ready For pickup</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 18:33:27</sys_created_on>
+        <sys_id>c1976b41a93703107f44e9480f0d2a1c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <ui_id>dccbeb9f-69c4-4f67-a5c8-88cff48cb8c3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8bPxthxGtq8jYbAYGsh2/rSFSFLN4lAllxZTpOF/PddyXKaplsXSmAM5ifrfpx7ztVB99tY8HgcD4Fn+VU+YkVeFIMsG1wO83JUlPmAFxQgj5NY0Qqw0gDThuN5RWXrAtvttQFqgUfaRN9q7n5JnrLWGFB2t8NSLppa0s1d6MAIWwrJMR+P7x+SuKYGwS2YeLw9StlNDUTSEiQ2TjRrKwSNPk4Q41TiffesZ36sxM3AMw/oRLggphyfPEtiWFtQHHDcnMoGkriiCmVqs4nH1rQYwAXwWyU3+4qlULZTWtF1I34g/jBzdXNAaSxsYX8kYUP9crRgcFtboVUXsbSU/ea0bCt100lwu4U5baU92G3bIB7UjrIj0TGcf1nqp1k/byqUVxfYSs2o3J+otUaUrYXGXQdI8EupaF0LtSC10Svhm5FKlS4kHtK51E84sxELlVLmeKe4IJpOMT7x4TtqhBPxGWGweefFk8fWze1kBMLEa/aCib8oLG2YEbX9gMArCDR3SXBuefGWAdjV830fYD67d00Yl5YTqakCQwzJ8Nf/wWMLjX3t3k++Mpp1+ejdZv7q6EQ3HZ1Tpbxo/o20YOcXseDmi7O5+fIvuTkw+sfs/CcTZ4M3X7GDm/a+bQ4M3Fh8cL+3WVbwfPTarcfpd3oVKgS1EHWwycmse4CpAMmbX8jozRoGkFUYsH9+z+bYfJT57/8rfMZX+OEn0FCkwUEIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c1976b41a93703107f44e9480f0d2a1c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Closed Complete</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 18:35:11</sys_created_on>
+        <sys_id>a6f76381a93703107f44e9480f0d2aea</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:06</sys_updated_on>
+        <ui_id>cf5029be-dce3-4acb-be11-1cc2931afd7f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8bPxthxGtq8jYbAYGsh2/rSFSFLN4lAllxZTpOF/PddyXKaplsXSmAM5ifrfpx7ztVB99tY8HgcD4Fn+VU+YkVeFIMsG1wO83JUlPmAFxQgj5NY0Qqw0gDThuN5RWXrAtvttQFqgUfaRN9q7n5JnrLWGFB2t8NSLppa0s1d6MAIWwrJMR+P7x+SuKYGwS2YeLw9StlNDUTSEiQ2TjRrKwSNPk4Q41TiffesZ36sxM3AMw/oRLggphyfPEtiWFtQHHDcnMoGkriiCmVqs4nH1rQYwAXwWyU3+4qlULZTWtF1I34g/jBzdXNAaSxsYX8kYUP9crRgcFtboVUXsbSU/ea0bCt100lwu4U5baU92G3bIB7UjrIj0TGcf1nqp1k/byqUVxfYSs2o3J+otUaUrYXGXQdI8EupaF0LtSC10Svhm5FKlS4kHtK51E84sxELlVLmeKe4IJpOMT7x4TtqhBPxGWGweefFk8fWze1kBMLEa/aCib8oLG2YEbX9gMArCDR3SXBuefGWAdjV830fYD67d00Yl5YTqakCQwzJ8Nf/wWMLjX3t3k++Mpp1+ejdZv7q6EQ3HZ1Tpbxo/o20YOcXseDmi7O5+fIvuTkw+sfs/CcTZ4M3X7GDm/a+bQ4M3Fh8cL+3WVbw4rVZj7LvdCpUiGkh6lCTkzn3AFMBkje/ENFbNQwgqzBg//ieza/5KPPf/zf4jG/ww08SQd5ZPwgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a6f76381a93703107f44e9480f0d2aea"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e1fc9b01a9f303107f44e9480f0d2afb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:50</sys_created_on>
+        <sys_id>782d1741a9f303107f44e9480f0d2a4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 17:47:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e1fc9b01a9f303107f44e9480f0d2afb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:51</sys_created_on>
+        <sys_id>852d1741a9f303107f44e9480f0d2a56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 17:47:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e1fc9b01a9f303107f44e9480f0d2afb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:47:51</sys_created_on>
+        <sys_id>892d1741a9f303107f44e9480f0d2a61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 17:47:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e1fc9b01a9f303107f44e9480f0d2afb"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Basic flow for assigning work on a loaner laptop</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>loaner_laptop</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Loaner Request  Record","reference":"x_cdltd_loaner_r_0_loner_request","reference_display":"Loaner Request ","type":"reference","base_type":"reference","usedInstances":{"c667ebbf-1176-4b77-9da2-5d5471ee614b":["record"],"d84d5b2e-f554-42b0-80e5-4a6368883392":["record"],"99a46ce0-7a2a-4396-9aa4-4d89c584ccc3":["parent"],"9a06986e-dda6-449c-a248-560561611a90":["parent"],"dccbeb9f-69c4-4f67-a5c8-88cff48cb8c3":["record"],"cf5029be-dce3-4acb-be11-1cc2931afd7f":["record"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Loaner Laptop</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Loaner Laptop">e1fc9b01a9f303107f44e9480f0d2afb</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>45218459a9b703107f44e9480f0d2a0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=45218459a9b703107f44e9480f0d2a0b^sys_idNOT IN85218459a9b703107f44e9480f0d2a0c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>45218459a9b703107f44e9480f0d2a0b</id>
+        <name>Loaner Laptop</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>85218459a9b703107f44e9480f0d2a0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=85218459a9b703107f44e9480f0d2a0c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=45218459a9b703107f44e9480f0d2a0b^sys_idNOT IN01218459a9b703107f44e9480f0d2a21,c1218459a9b703107f44e9480f0d2a0e,c9218459a9b703107f44e9480f0d2a37"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</model>
+        <model_id>45218459a9b703107f44e9480f0d2a0b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_45218459a9b703107f44e9480f0d2a0b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>01218459a9b703107f44e9480f0d2a21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=01218459a9b703107f44e9480f0d2a21"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</model>
+        <model_id>45218459a9b703107f44e9480f0d2a0b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_45218459a9b703107f44e9480f0d2a0b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>c1218459a9b703107f44e9480f0d2a0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c1218459a9b703107f44e9480f0d2a0e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</model>
+        <model_id>45218459a9b703107f44e9480f0d2a0b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_45218459a9b703107f44e9480f0d2a0b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>c9218459a9b703107f44e9480f0d2a37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c9218459a9b703107f44e9480f0d2a37"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=45218459a9b703107f44e9480f0d2a0b^sys_idNOT INc9218459a9b703107f44e9480f0d2a4b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>c9218459a9b703107f44e9480f0d2a4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=45218459a9b703107f44e9480f0d2a0b^sys_idNOT IN49218459a9b703107f44e9480f0d2a47,45218459a9b703107f44e9480f0d2a48,41218459a9b703107f44e9480f0d2a49,09218459a9b703107f44e9480f0d2a49,cd218459a9b703107f44e9480f0d2a49,85218459a9b703107f44e9480f0d2a4a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>49218459a9b703107f44e9480f0d2a47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <ui_id>c667ebbf-1176-4b77-9da2-5d5471ee614b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XXW+jOBSG/0rEdZzFYIjp3ShptZWyUynpzF7MjpDxR2PJgQyYTrNV//sYcAoJaaadSStVmjt8/JH3vD5PDny5dyRzzhwUUY4JgngMPdeFbhj6lMAk8UOauAlHztBJyYqblTmnWc7M+Jaosgrc309yTjRngywffFqz6jGGI1rmOU/1w4NZymSxVmTz2e4wEbqUipl55+zL16GzJrk5XPPcObvfm3quOkUSrszS+Vbevly9WVdjltFyZXTFchuc2Z1TOzO4nJoZs6mSA4cOv9M8ZdzoEEQVfOisSGqSzPKNc6bz0gRM+uwqVZvHFUuZ6ibPFbkr5P/mh32vWie4SYxaDx6HsfWnCYsp0WRhTqa6zB/tyiTlRWMJ44KUSk+6sWbB1VrLLG22aJKo7e5Mlav0Y2OI83hA5zrKwojg6yrPSnmTllgss+/zrcgLmdaO2BRVRol6HBGtc5mUupJz75Ty+pDZTfiw3UIqc/1xLTousjKvTZqfT67m0/jfD9eTv8/n8fx8cT2/nFyfVzu44vXRK7Jey/QmXufZrawVmnxXoxtlBiOhsu8msULepCNCK3NG5urI6MLEp3X4M8ll9aP/mGPM5krlp1R+K/llXXhCQB+GIYDQ9QGCSQgizAPg8oCgwENhEHrOw9ApNsVEkaJoPTaXG38rK4sax623cX09TZp1hVabaS7X+oORd8utow/DLZfB0conbaF3zmzZvIspU5rFKiOpsTePXfNYP3GTYqH7bM7qlYN5Mz94Oao/F7xF9bqu0MMJWFp7sVl37+BjM2FZ9Y6zaiMtrE2VH2AVu++IVZvW78O64/UuqztuyyJuKtaKrk99KyA9iCOMEh/4CQoAioQA2MUIIE5cGnhsjCD9BSB/iuHxBiTaKqZZymSVV9HBsNCmKf5Xuq7PYNBnbn/6pM1RdIibdMUdEmyx68Vmhw6w2PmnapHIdd8TeKdqkjtm73K3Y/eb8MUZDpPAxYALjAHyxxhE0PNAGBIGIaJMuK/b8Fx2rJpF50VUyxXPSh0LRW46rLl9vrb/UC/j6hlKtlydp/UfpFX0pERLV5JlipN0v6OZcvrrwiq1aKEXdrRjbL0jsk7W0lqn9/pZ1+s34YpSgk2DIiDyKQcoTCjAggrg8yQQfpDgZOy+Qt+ix2s46pcqK3NS32JL1Ak+4J6hY8vStBXwtDRLUn03+/FZ/yCLU/AHp9/CqWf33hddO/FaTC3NvinZFFVVGIb7lHFIxkFSfaQRgLwIAhIhD0QhH3MkcOiT6BUow/BodYt+KRd0yVmp+Gkpe4aOLWWLVsDT0ixlbaHvAjbvxC1h4ckIw72XQbpKu+IO8dbJ6l1yJxac5HR5Ibmq7tN+iz1BY/dadkHsXszbdDfPgz7jFEBmXh2RF3oA+2gMxhFOXGRKL/H5Cbn7+gML417JthQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=49218459a9b703107f44e9480f0d2a47"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>Deployment Prep</comment>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>45218459a9b703107f44e9480f0d2a48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <ui_id>99a46ce0-7a2a-4396-9aa4-4d89c584ccc3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VVXU/bMBT9K5Gfqy6lawt9m0B9YjCNjT0wsG7iG2rNiTPHAbKq/53r2Gk7YF3ZJg2kPsT3y+eenJNeLJgUbMpwMoTxcDgaDQdxPKRfkg3EwSA+wHS0PxmlrMcKyJEqLVTfuIVEIcVuQNUueMdToazgSkOBhhsed4+unAqFrEoFzXmoP26TUUimc6mEwYJNLy57rARDN1k0bLp4kNoVqoIEFZV+CjCfgm6b0sfoyNsCHzve7I1OfEIb4fDEPYZ3FguBBCQDVWGP5VAIsNo0bGpNTQGDIE4L1awq5rKwNJC52rtK/qBr92NXlyFtlqLPrY48cOXD2RFYOKPJqa1NKE3nWqZYeU4EZlAre7gZ8wWnpZW68C1+a9+tVZ0XJ54SthrQvRqK1BWBwNLt6ZCHNbKzub792KGcyaKlJCSVTkGtTmCtkUltHZ4FS4DmdQDCK0eFOQ3nOZSlLK55afSNbAcSvrx/rejQz5S+JSCVvC76kLpl+kQ19GcUP2rD52CkG/yexlDzsseqpjpUUFXr/YhY/r126Py2YS/uqXEtqZGlfUcX3GBYYdkLvtjbKrZxshZXJlEJ3hqi2nAGqZku+1pTq1gsDkkcFkWkTfS5FO6RD/ppbVzNcnlVGqmNtI0vH15Vc22sY6BFSPv7xAeDbmxk5xgpKK0uo4wm0mpKN47Wx4b7XzCeZ+0d2O6sPXN0R+cd3U+/hM7jmBMXFn3ioc9D0s9ae32w3eshsovZx6M4fk1+95+xP7b7S7H2xtf+NybPsm2ym0zW+roFaTfMPXhsNEfes3W/A4BO9188gp/xBJ0nWiuE4qHACdGbmVt4Le69fybut69J2X/7T/ZSpP0rQV/eAziFqvzPCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=45218459a9b703107f44e9480f0d2a48"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Ready For pickup</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>41218459a9b703107f44e9480f0d2a49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <ui_id>dccbeb9f-69c4-4f67-a5c8-88cff48cb8c3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy2rjMBT9FaN1MHachja7ISEwkGkhncmmU4wsXTcC+VE90mRC/n2ubdkxSemk0E0Yr6T7kM65Psd+2hPByYSMgAfhXThmURhFwyAY3o7CZBwl4ZBHFCAkA5LTDLBSASsUx/2GSlsF9vupAmqAe4XyfpW8Wsahz6xSkJvDAUu50KWku5XrwAhbC8kxTyZPzwNSUoWHG1Bksj9JXYpO0gQkli5beKdwza6s9rxgNkNcsWiDC9c5cxnv+wwz2FTBCYMBga2BnAMCSanUMCAZzZFloXZkYpTFAPLnD7ncdRVrkZuGaEa3WvzBm0dBVZcCMmNuCN02dgNqwumMGvqIJzNjVTevQjDQzUw4pNRKM+3HmoKH0ogib1oMTWTbXUib5ffNREh3QO99WI0goKx4VsgbWunjunhbtiDnIq9H4ijKglHZ7agxSiTWVHD2BCTUM85oWYr8JS5VsRF1M0LJ/BeJGz+VxRveqcVL7lNW4fZxqtSfY3xWh1dUiYrEDzwGmw8Dond6KqnWRyo4w/jVVkgaYo5CXE+hHkFcK6FqZkqU5htetQEH/DBw+k9uPlIYuzsKqnfm0QPbmHFpeCwLmoOKVRzgsl7BqwVtzj2wqCu9ZZP3Pm2JCwC3lvhZC+F9As4VZ7FFv9e7bxLOEzdf5onba/KEo3H1pviXFYLhhx/bnpJq9eueDbTBj/9vGwQRD8fnmj9Nf07xF+BqFT8XILl+B2grd8gQl4G4AX4ieZf0Vi7Z/Qq+TPfhOKifK1L/f/NHeP4L725p0xMJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=41218459a9b703107f44e9480f0d2a49"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>09218459a9b703107f44e9480f0d2a49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <ui_id>d84d5b2e-f554-42b0-80e5-4a6368883392</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XXW+jOBSG/0rEdZzFYIjp3ShptZWyUynpzF7MjpDxR2PJgQyYTrNV//sYcAoJaaadSStVmjt8/JH3vD5PDny5dyRzzhwUUY4JgngMPdeFbhj6lMAk8UOauAlHztBJyYqblTmnWc7M+Jaosgrc309yTjRngywffFqz6jGGI1rmOU/1w4NZymSxVmTz2e4wEbqUipl55+zL16GzJrk5XPPcObvfm3quOkUSrszS+Vbevly9WVdjltFyZXTFchuc2Z1TOzO4nJoZs6mSA4cOv9M8ZdzoEEQVfOisSGqSzPKNc6bz0gRM+uwqVZvHFUuZ6ibPFbkr5P/mh32vWie4SYxaDx6HsfWnCYsp0WRhTqa6zB/tyiTlRWMJ44KUSk+6sWbB1VrLLG22aJKo7e5Mlav0Y2OI83hA5zrKwojg6yrPSnmTllgss+/zrcgLmdaO2BRVRol6HBGtc5mUupJz75Ty+pDZTfiw3UIqc/1xLTousjKvTZqfT67m0/jfD9eTv8/n8fx8cT2/nFyfVzu44vXRK7Jey/QmXufZrawVmnxXoxtlBiOhsu8msULepCNCK3NG5urI6MLEp3X4M8ll9aP/mGPM5krlp1R+K/llXXhCQB+GIYDQ9QGCSQgizAPg8oCgwENhEHrOw9ApNsVEkaJoPTaXG38rK4sax623cX09TZp1hVabaS7X+oORd8utow/DLZfB0conbaF3zmzZvIspU5rFKiOpsTePXfNYP3GTYqH7bM7qlYN5Mz94Oao/F7xF9bqu0MMJWFp7sVl37+BjM2FZ9Y6zaiMtrE2VH2AVu++IVZvW78O64/UuqztuyyJuKtaKrk99KyA9iCOMEh/4CQoAioQA2MUIIE5cGnhsjCD9BSB/iuHxBiTaKqZZymSVV9HBsNCmKf5Xuq7PIO4ztz990uYoOsRNuuIOCbbY9WKzQwdY7PxTtUjkuu8JvFM1yR2zd7nbsftN+OIMh0ngYsAFxgD5Ywwi6HkgDAmDEFEm3NdteC47Vs2i8yKq5YpnpY6FIjcd1tw+X9t/qJdx9QwlW67O0/oP0ip6UqKlK8kyxUm639FMOf11YZVatNALO9oxtt4RWSdraa3Te/2s6/WbcEUpwaZBERD5lAMUJhRgQQXweRIIP0hwMnZfoW/R4zUc9UuVlTmpb7El6gQfcM/QsWVp2gp4Wpolqb6b/fisf5DFKfiD02/h1LN774uunXgtppZm35RsiqoqDMN9yjgk4yCpPtIIQF4EAYmQB6KQjzkSOPRJ9AqUYXi0ukW/lAu65KxU/LSUPUPHlrJFK+BpaZayttB3AZt34paw8GSE4d7LIF2lXXGHeOtk9S65EwtOcrq8kFxV92m/xZ6gsXstuyB2L+ZtupvnQZ9xCiAzr47ICz2AfTQG4wgnLjKll/j8hNx9/QFcsU0LthQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09218459a9b703107f44e9480f0d2a49"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>Post deployment</comment>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>cd218459a9b703107f44e9480f0d2a49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <ui_id>9a06986e-dda6-449c-a248-560561611a90</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VVXU/bMBT9K5Gfqy6lawt9m0B9YoDGxh4YWE58Q605dmY7QFb1v+86dtoOWFe2SQOpD/H98rkn56SXCyI4mRKYDNl4OByNhoM0HeIvKwb8YJAeQD7an4xy0iOKlYCVjtmv1LFMAsZumax98J7mXDpOpWYKDDU07R59ORZyYSvJmotYf9wmk5jM50JyA4pML696pGIGb3JgyHTxILUrVMkykFj6McJ8CrprqhDDI20LQux4szc5CQltuMeT9gjcO1AcEEjBpIUeKZnizGnTkKkzNQYMMH6qZLOqmAvlcCDxtfdWfMdr91NfVwBulkPIrY40chXCxRFz7Bwn5642sTSfa5GDDZxwKFgt3eFmLBScVk5oFVrC1qFby7pUJ4ESshrQvRqM1BZBQOX39MjjGsX5XN996FDOhGopiUmpcyZXJ+acEVntPJ4FyRjO6wDEVw4SShxOS1ZVQt3Qyuhb0Q5EfGX/RuKhX0h9h0CsuFF9lvtl+kg1688wftSGL5gRfvB7HIPNyx6xjT2UzNr1fkgs/VZ7dGHbuBcN1PiW3IjKvcMLbiGusOxFX+xtFds4W4urECA5bQ1hN5yBasbLvtTYyheLQxSHA55ok3yquH+kg35eG1+zXF5XRmgjXBPKh9d2ro3zDLQIcf+QOANTaFMmbg7JmbYuwaWkbjyhraXsY8P9LxjPs/YObHfWnnm6k4uO7qdfQudxKJELByHx0OcxGWatvT7Y7vUY2cXs41Gavia/h8/YH9v9pVh742v/G5MXxTbZTSZrfd0x4TbMPXhsNE/es3W/A4BO958Dgp/xRJ1nWktg6qHAEdGbmV94Le69fybut69J2X/7T/ZSpP0rQV/9AIhSgAfPCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cd218459a9b703107f44e9480f0d2a49"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Closed Complete</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loaner Laptop">45218459a9b703107f44e9480f0d2a0b</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>85218459a9b703107f44e9480f0d2a4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <ui_id>cf5029be-dce3-4acb-be11-1cc2931afd7f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW+bMBT9K8jPEYKQRm3epkSRJmWtlG556Spk7EtjyRhqmzRZlP++CxiCkqpLpb5E48m+H/Y5l3PgaU8EJxMyAh6Ed+GYRWEUDYNgeDsKk3GUhEMeUYCQDIiiGWClBpZrjvsNlWUV2O+nGqgF7uXa+1XwahmHPiu1BmUPByzlwhSS7lauAyNsLSTHPJk8PQ9IQTUebkGTyf4kdSk6SROQWLps4Z3Ctbui2vOclRniikUbXLjOmct432eYwaYKThgMCGwtKA4IJKXSwIBkVCHLXO/IxOoSA8ifPyi56yrWQtmGaEa3RvzBm0dBVZcCMmNuCN02dgNqwumMWvqIJzNb6m5euWBgmplwSGkp7bQfawoeCity1bRYmsi2O5dlpu6biZDugN77KA2CgKLiWSFvaKWP6/xt2YKcC1WPxFGUOaOy21FrtUhKW8HZE5BQzzijRSHUS1zofCPqZoSS+S8SN34q8ze804gX5VNW4fZxqtSfY3xWh1dUi4rEDzwGmw8DYnZmKqkxRyo4w/i1rJA0xByFuJ5CPYK4VkLVzLQo7De8agMO+GHg9J/cfKQwdncUVO/Mowe2MePS8ljmVIGOdRzgsl7BawnGnntgUVd6yybvfdoSFwBuLfGzFsL7BJwrzmKLfq933yScJ26+zBO31+QJR+PqTfEvKwTDDz+2PSXV6jc9GxiLH//fZRBEPDqX/En2c3q/AFWr97kAyc07MFuxQ4awLMQN7BPBu6S3csnuR/Blqg/HQf1ckfb/m//B819hMonkEQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=85218459a9b703107f44e9480f0d2a4a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_45218459a9b703107f44e9480f0d2a0b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>09218459a9b703107f44e9480f0d2a1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_45218459a9b703107f44e9480f0d2a0b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>45218459a9b703107f44e9480f0d2a3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_45218459a9b703107f44e9480f0d2a0b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:08</sys_created_on>
+        <sys_id>8d218459a9b703107f44e9480f0d2a26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">73dfef7aa82703107f4404527b2a4fb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">73dfef7aa82703107f4404527b2a4fb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_45218459a9b703107f44e9480f0d2a0b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e1fc9b01a9f303107f44e9480f0d2afb</sys_id>
+        <latest_snapshot>45218459a9b703107f44e9480f0d2a0b</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e1fc9b01a9f303107f44e9480f0d2afb^sys_idNOT IN51218459a9b703107f44e9480f0d2a6f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>e1fc9b01a9f303107f44e9480f0d2afb</plan_id>
+        <snapshot>45218459a9b703107f44e9480f0d2a0b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 20:25:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>51218459a9b703107f44e9480f0d2a6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 20:25:09</sys_updated_on>
+        <trigger display_value="">11218459a9b703107f44e9480f0d2a6b</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e1fc9b01a9f303107f44e9480f0d2afb"/>
+</record_update>
